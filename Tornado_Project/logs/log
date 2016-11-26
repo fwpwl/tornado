@@ -1,0 +1,777 @@
+[W 161122 10:43:28 Passport:11] warning msg
+[E 161122 10:43:28 Passport:12] error msg
+[D 161122 10:46:12 Passport:9] debug msg
+[I 161122 10:46:12 Passport:10] info msg
+[W 161122 10:46:12 Passport:11] warning msg
+[E 161122 10:46:12 Passport:12] error msg
+[I 161122 10:46:12 web:1946] 304 GET / (127.0.0.1) 14.21ms
+[D 161122 10:47:40 Passport:9] debug msg
+[I 161122 10:47:40 Passport:10] info msg
+[W 161122 10:47:40 Passport:11] warning msg
+[E 161122 10:47:40 Passport:12] error msg
+[I 161122 10:47:40 web:1946] 304 GET / (127.0.0.1) 2.97ms
+[E 161122 16:38:38 web:1524] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': '127.0.0.1:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|0e983cf2|9f2c5110c852c98b3dea958d787e2853|1479718565', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/VerifyCode.py", line 22, in get
+        name, text, image = captcha.generate_captcha
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 161122 16:38:38 web:1946] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 6.43ms
+[I 161122 16:38:57 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[E 161122 16:39:04 web:1524] Uncaught exception GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='GET', uri='/api/imagecode?codeid=123&pcodeid=', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, sdch, br', 'Host': '127.0.0.1:8000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': '_xsrf=2|0e983cf2|9f2c5110c852c98b3dea958d787e2853|1479718565', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/VerifyCode.py", line 22, in get
+        name, text, image = captcha.generate_captcha()
+    AttributeError: 'module' object has no attribute 'generate_captcha'
+[E 161122 16:39:04 web:1946] 500 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 12.36ms
+[I 161122 16:40:49 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:40:54 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 137.36ms
+[I 161122 16:41:35 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 16.11ms
+[I 161122 16:42:55 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:43:03 web:1946] 200 GET /api/imagecode?codeid=123&pcodeid= (127.0.0.1) 53.24ms
+[I 161122 16:43:50 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:46:36 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:46:55 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:47:15 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[W 161122 16:49:47 web:1946] 404 GET /api/check_login (127.0.0.1) 14.42ms
+[W 161122 16:49:47 web:1946] 404 GET /api/house/index (127.0.0.1) 2.23ms
+[W 161122 16:49:48 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.29ms
+[D 161122 16:49:50 Passport:9] debug msg
+[I 161122 16:49:50 Passport:10] info msg
+[W 161122 16:49:50 Passport:11] warning msg
+[E 161122 16:49:50 Passport:12] error msg
+[I 161122 16:49:50 web:1946] 200 GET / (127.0.0.1) 2.66ms
+[I 161122 16:50:09 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161122 16:50:12 web:1946] 200 GET / (127.0.0.1) 35.20ms
+[I 161122 16:50:12 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.76ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 17.64ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.32ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.45ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 6.95ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 5.13ms
+[I 161122 16:50:13 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.86ms
+[I 161122 16:50:13 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 9.69ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.64ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 3.60ms
+[I 161122 16:50:13 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 6.17ms
+[I 161122 16:50:14 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.83ms
+[I 161122 16:50:14 web:1946] 304 GET /static/js/template.js (127.0.0.1) 8.26ms
+[I 161122 16:50:14 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.97ms
+[I 161122 16:50:14 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.99ms
+[I 161122 16:50:14 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 6.22ms
+[I 161122 16:50:14 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 17.13ms
+[I 161122 16:50:15 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 11.90ms
+[W 161122 16:50:17 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.12ms
+[I 161122 16:50:20 web:1946] 304 GET /register.html (127.0.0.1) 1.48ms
+[I 161122 16:50:20 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 2.64ms
+[W 161122 16:50:23 web:1521] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1): Missing argument codeid
+[W 161122 16:50:23 web:1946] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1) 1.06ms
+[W 161122 16:50:28 web:1521] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1): Missing argument codeid
+[W 161122 16:50:28 web:1946] 400 GET /api/imagecode?p=&c=cf3e943d-5e43-4b3b-9535-7b203d32d201 (127.0.0.1) 1.29ms
+[I 161122 16:51:31 web:1946] 304 GET /register.html (127.0.0.1) 1.44ms
+[I 161122 16:51:31 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.78ms
+[I 161122 16:51:31 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.57ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.02ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.68ms
+[I 161122 16:51:31 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 3.13ms
+[I 161122 16:51:31 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.68ms
+[I 161122 16:51:32 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.64ms
+[I 161122 16:51:32 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.84ms
+[I 161122 16:51:32 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.77ms
+[I 161122 16:51:34 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=ad53fc8c-660f-4935-8120-e6b23182f582 (127.0.0.1) 54.53ms
+[I 161122 16:52:00 web:1946] 200 GET /api/imagecode?pcodeid=ad53fc8c-660f-4935-8120-e6b23182f582&codeid=826bab8f-bec6-4f2d-92da-ed760f09a525 (127.0.0.1) 22.18ms
+[I 161122 16:52:01 web:1946] 200 GET /api/imagecode?pcodeid=826bab8f-bec6-4f2d-92da-ed760f09a525&codeid=5a94e998-3f89-4960-8729-da7fb598f13e (127.0.0.1) 15.22ms
+[I 161122 16:52:02 web:1946] 200 GET /api/imagecode?pcodeid=5a94e998-3f89-4960-8729-da7fb598f13e&codeid=f78a6c48-70fc-4b6a-b564-7e8043903e24 (127.0.0.1) 19.61ms
+[I 161122 16:52:38 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:52:39 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161122 16:54:08 web:1946] 200 GET /api/imagecode?pcodeid=f78a6c48-70fc-4b6a-b564-7e8043903e24&codeid=aa67c8da-b879-4d43-8223-5b104fad2f0b (127.0.0.1) 72.05ms
+[I 161122 17:24:33 web:1946] 304 GET /login.html (127.0.0.1) 12.97ms
+[I 161122 17:24:33 web:1946] 304 GET /static/css/ihome/login.css (127.0.0.1) 2.62ms
+[I 161122 17:24:33 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 3.61ms
+[I 161122 17:25:22 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 1.81ms
+[I 161122 17:25:25 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=f4039f04-bae5-47e7-9b3b-d9d87c5ec12e (127.0.0.1) 35.60ms
+[I 161122 17:27:59 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 08:45:51 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=bca5f5c0-55f8-424f-b2fe-9c0022ae097a (127.0.0.1) 79.12ms
+[I 161123 08:45:53 web:1946] 200 GET /favicon.ico (127.0.0.1) 15.00ms
+[I 161123 08:46:03 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 4.55ms
+[I 161123 09:01:52 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:02:24 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:02:40 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:08:11 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:10:29 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:12:25 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:16:44 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:22:59 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:24:36 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 09:29:56 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:30:02 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 09:30:25 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 09:30:28 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 09:31:51 web:1946] 200 GET /api/imagecode?pcodeid=bca5f5c0-55f8-424f-b2fe-9c0022ae097a&codeid=4a63c28b-f956-4eed-af4e-5ad92a5c916f (127.0.0.1) 92.61ms
+[I 161123 09:32:56 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[E 161123 09:34:21 web:1524] Uncaught exception POST /api/smscode (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/smscode', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop', 'Content-Length': '111', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'page_count="2|1:0|10:1479431823|10:page_count|4:Mw==|a706fdc20d467b66bb5fcc2d271283a3a665bc689d1d17f583192792248f6a7d"', 'Cache-Control': 'no-cache', 'Content-Type': 'application/json', 'Postman-Token': 'ce0ddd4d-67c7-6966-1a07-5ab8cd1b66cf'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1422, in _execute
+        result = self.prepare()
+      File "/home/python/0829/Tornado_Project/handlers/BaseHandler.py", line 19, in prepare
+        self.json_args = json.loads(self.request.body)
+    NameError: global name 'json' is not defined
+[E 161123 09:34:21 web:1946] 500 POST /api/smscode (127.0.0.1) 5.11ms
+[I 161123 09:34:36 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 09:34:40 web:1946] 200 POST /api/smscode (127.0.0.1) 2.37ms
+[I 161123 09:34:49 web:1946] 200 GET /api/imagecode?pcodeid=4a63c28b-f956-4eed-af4e-5ad92a5c916f&codeid=9c5db723-8fe0-46f3-985b-2b0ca3546b56 (127.0.0.1) 22.28ms
+[I 161123 09:34:56 web:1946] 200 POST /api/smscode (127.0.0.1) 1.88ms
+[I 161123 09:35:16 web:1946] 200 POST /api/smscode (127.0.0.1) 1.05ms
+[I 161123 09:35:37 web:1946] 200 GET /api/imagecode?pcodeid=9c5db723-8fe0-46f3-985b-2b0ca3546b56&codeid=248bf1cf-bd72-4d1c-8c71-974e949da803 (127.0.0.1) 17.26ms
+[I 161123 09:36:06 web:1946] 200 POST /api/smscode (127.0.0.1) 1835.65ms
+[I 161123 09:47:40 web:1946] 304 GET /register.html (127.0.0.1) 14.73ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 12.88ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 7.03ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.45ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.20ms
+[I 161123 09:47:40 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 3.66ms
+[I 161123 09:47:40 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 10.98ms
+[I 161123 09:47:40 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 11.60ms
+[I 161123 09:47:40 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 2.57ms
+[I 161123 09:47:41 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 18.48ms
+[I 161123 09:47:43 web:1946] 304 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 5.87ms
+[I 161123 09:47:43 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=8168f1a3-3da9-44c3-bc6c-56baa3795e99 (127.0.0.1) 22.21ms
+[I 161123 09:48:09 web:1946] 200 POST /api/smscode (127.0.0.1) 1.16ms
+[I 161123 09:48:52 web:1946] 304 GET /register.html (127.0.0.1) 1.03ms
+[I 161123 09:48:52 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.05ms
+[I 161123 09:48:53 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.23ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.06ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 4.06ms
+[I 161123 09:48:53 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 1.58ms
+[I 161123 09:48:53 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.75ms
+[I 161123 09:48:53 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.53ms
+[I 161123 09:48:53 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.59ms
+[I 161123 09:48:53 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.03ms
+[I 161123 09:48:56 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=8bb6bfe7-a48c-423a-a9ae-27bc6b76958f (127.0.0.1) 22.67ms
+[I 161123 09:49:18 web:1946] 200 POST /api/smscode (127.0.0.1) 444.19ms
+[I 161123 09:50:44 autoreload:204] /usr/lib/python2.7/distutils/debug.py modified; restarting server
+[I 161123 10:08:23 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:09:49 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:12:55 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 10:13:27 autoreload:204] /home/python/0829/Tornado_Project/handlers/VerifyCode.py modified; restarting server
+[I 161123 11:07:14 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 11:08:35 autoreload:204] /home/python/0829/Tornado_Project/constants.py modified; restarting server
+[I 161123 11:08:38 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161123 11:20:06 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:20:34 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:22:58 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161123 11:25:18 web:1946] 200 GET /api/imagecode?pcodeid=8bb6bfe7-a48c-423a-a9ae-27bc6b76958f&codeid=83f51da3-da1b-4b1c-902e-31a13a7e5d09 (127.0.0.1) 65.91ms
+[W 161123 11:25:26 web:1521] 403 POST /api/smscode (127.0.0.1): '_xsrf' argument missing from POST
+[W 161123 11:25:26 web:1946] 403 POST /api/smscode (127.0.0.1) 11.12ms
+[I 161123 11:27:25 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 11:29:07 autoreload:204] /home/python/0829/Tornado_Project/handlers/BaseHandler.py modified; restarting server
+[I 161123 11:29:30 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161123 11:29:40 web:1946] 304 GET /register.html (127.0.0.1) 15.18ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.76ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.79ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.12ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.74ms
+[I 161123 11:29:40 web:1946] 304 GET /static/css/ihome/register.css (127.0.0.1) 4.34ms
+[I 161123 11:29:40 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.65ms
+[I 161123 11:29:40 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.88ms
+[I 161123 11:29:40 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.46ms
+[I 161123 11:29:41 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.75ms
+[I 161123 11:29:43 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=b59861b5-c366-4aa8-b031-0581253c79dc (127.0.0.1) 41.36ms
+[I 161123 11:30:02 web:1946] 200 POST /api/smscode (127.0.0.1) 464.41ms
+[I 161123 11:30:55 web:1946] 304 GET / (127.0.0.1) 7.72ms
+[I 161123 11:30:55 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 4.73ms
+[W 161123 11:30:59 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.05ms
+[I 161123 11:36:32 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 5.90ms
+[W 161123 11:36:40 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.76ms
+[I 161123 11:36:41 web:1946] 304 GET /static/js/ihome/register.js (127.0.0.1) 2.47ms
+[I 161123 11:36:44 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=0046530c-cfbe-4a24-8571-5705601136a7 (127.0.0.1) 22.64ms
+[I 161123 11:38:03 autoreload:204] /home/python/0829/Tornado_Project/libs/yuntongxun/CCP.py modified; restarting server
+[I 161123 11:38:04 autoreload:204] /home/python/0829/Tornado_Project/libs/yuntongxun/CCP.py modified; restarting server
+[I 161123 14:47:32 autoreload:204] /home/python/0829/Tornado_Project/utils/session.py modified; restarting server
+[I 161123 14:47:38 autoreload:204] /home/python/0829/Tornado_Project/utils/session.py modified; restarting server
+[I 161125 11:43:19 web:1946] 200 GET /my.html (127.0.0.1) 22.16ms
+[I 161125 11:43:19 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.97ms
+[I 161125 11:43:19 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.57ms
+[I 161125 11:43:19 web:1946] 200 GET /static/css/reset.css (127.0.0.1) 1.80ms
+[I 161125 11:43:19 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.77ms
+[I 161125 11:43:19 web:1946] 200 GET /static/css/ihome/main.css (127.0.0.1) 9.27ms
+[I 161125 11:43:19 web:1946] 200 GET /static/css/ihome/my.css (127.0.0.1) 3.32ms
+[I 161125 11:43:19 web:1946] 200 GET /static/js/jquery.min.js (127.0.0.1) 2.92ms
+[I 161125 11:43:20 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.04ms
+[I 161125 11:43:20 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 8.14ms
+[I 161125 11:43:20 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.25ms
+[I 161125 11:43:20 web:1946] 200 GET /static/js/ihome/my.js (127.0.0.1) 2.12ms
+[I 161125 11:43:21 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 8.86ms
+[I 161125 11:43:22 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 8.42ms
+[W 161125 11:43:25 web:1946] 404 GET /api/logout (127.0.0.1) 10.23ms
+[W 161125 11:43:27 web:1946] 404 GET /api/logout (127.0.0.1) 3.14ms
+[I 161125 11:43:30 web:1946] 200 GET / (127.0.0.1) 5.99ms
+[I 161125 11:43:30 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 3.01ms
+[I 161125 11:43:30 web:1946] 200 GET /static/css/ihome/index.css (127.0.0.1) 6.45ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/logo@128x59.png (127.0.0.1) 3.12ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 5.64ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 6.88ms
+[I 161125 11:43:31 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 10.03ms
+[I 161125 11:43:32 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 3.54ms
+[I 161125 11:43:32 web:1946] 200 GET /static/js/template.js (127.0.0.1) 5.12ms
+[I 161125 11:43:32 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 3.45ms
+[I 161125 11:43:34 web:1946] 200 GET /api/check_login (127.0.0.1) 1.95ms
+[W 161125 11:43:34 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.56ms
+[I 161125 11:43:50 web:1946] 200 GET /login.html (127.0.0.1) 6.50ms
+[I 161125 11:43:50 web:1946] 200 GET /static/css/ihome/login.css (127.0.0.1) 2.38ms
+[I 161125 11:43:50 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 4.87ms
+[E 161125 11:43:59 web:1524] Uncaught exception POST /api/login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '44', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/login.html', 'Cookie': '_xsrf=2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780; session_id="2|1:0|10:1480037781|10:session_id|44:MGRkOTE2ZWQ3MDE3NGExZjhjNWQ4ZWEyMjNjNGQxYWM=|15a80141456d70416a37145fc2449bcb9800654349aa2b8f531a1f6fa678fac5"', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/Passport.py", line 47, in post
+        password = hashlib.sha256(config.passwd_hash_key + password).hexdigest()
+    AttributeError: 'module' object has no attribute 'passwd_hash_key'
+[E 161125 11:43:59 web:1946] 500 POST /api/login (127.0.0.1) 49.50ms
+[W 161125 13:51:14 web:1946] 404 GET /api/profile (127.0.0.1) 4.42ms
+[I 161125 13:51:15 web:1946] 200 GET /api/check_login (127.0.0.1) 1.23ms
+[W 161125 13:51:15 web:1946] 404 GET /api/house/index (127.0.0.1) 0.92ms
+[W 161125 13:51:16 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.04ms
+[I 161125 13:51:18 web:1946] 200 GET / (127.0.0.1) 9.00ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.08ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.73ms
+[I 161125 13:51:18 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.49ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.44ms
+[I 161125 13:51:18 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.73ms
+[I 161125 13:51:18 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.78ms
+[I 161125 13:51:18 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.27ms
+[I 161125 13:51:18 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.84ms
+[I 161125 13:51:18 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 3.81ms
+[I 161125 13:51:18 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 7.82ms
+[I 161125 13:51:18 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 5.06ms
+[I 161125 13:51:19 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.78ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.10ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.23ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.85ms
+[I 161125 13:51:19 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.62ms
+[I 161125 13:51:19 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.46ms
+[I 161125 13:51:19 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 0.82ms
+[I 161125 13:51:19 web:1946] 304 GET /api/check_login (127.0.0.1) 1.15ms
+[I 161125 13:51:20 web:1946] 304 GET / (127.0.0.1) 1.26ms
+[W 161125 13:51:20 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.34ms
+[I 161125 13:51:21 web:1946] 304 GET / (127.0.0.1) 0.89ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 0.99ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.89ms
+[I 161125 13:51:21 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.05ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.09ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.80ms
+[I 161125 13:51:21 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.75ms
+[I 161125 13:51:21 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.09ms
+[I 161125 13:51:21 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 0.93ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.85ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 2.84ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.28ms
+[I 161125 13:51:21 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.75ms
+[I 161125 13:51:21 web:1946] 304 GET /static/js/template.js (127.0.0.1) 2.01ms
+[I 161125 13:51:21 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 0.77ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.72ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 2.19ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 2.77ms
+[I 161125 13:51:21 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 1.48ms
+[I 161125 13:51:22 web:1946] 304 GET /api/check_login (127.0.0.1) 1.39ms
+[W 161125 13:51:22 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.22ms
+[I 161125 13:51:27 web:1946] 200 GET /register.html (127.0.0.1) 3.13ms
+[I 161125 13:51:27 web:1946] 200 GET /static/css/ihome/register.css (127.0.0.1) 2.93ms
+[I 161125 13:51:28 web:1946] 200 GET /static/js/ihome/register.js (127.0.0.1) 1.09ms
+[I 161125 13:51:28 web:1946] 200 POST /api/register (127.0.0.1) 0.73ms
+[I 161125 13:51:28 web:1946] 200 GET /api/imagecode?pcodeid=&codeid=be18d738-f1ba-41c5-9886-c32bbeb1d0d7 (127.0.0.1) 67.17ms
+[W 161125 13:51:35 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 0.93ms
+[I 161125 13:51:35 web:1946] 200 GET /login.html (127.0.0.1) 6.45ms
+[I 161125 13:51:35 web:1946] 200 GET /static/css/ihome/login.css (127.0.0.1) 1.40ms
+[I 161125 13:51:35 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 1.21ms
+[E 161125 13:51:51 web:1524] Uncaught exception POST /api/login (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/login', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '44', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780', 'Host': '127.0.0.1:8000', 'Accept': 'application/json, text/javascript, */*; q=0.01', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/login.html', 'Cookie': '_xsrf=2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780; session_id="2|1:0|10:1480045479|10:session_id|44:MGRkOTE2ZWQ3MDE3NGExZjhjNWQ4ZWEyMjNjNGQxYWM=|f97448aae5cdbdb54195ea73c62bf7ee331e22711c34adc93173d4ca210e5e26"', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/Passport.py", line 48, in post
+        password = hashlib.sha256(config.passwd_hash_key + password).hexdigest()
+    AttributeError: 'module' object has no attribute 'passwd_hash_key'
+[E 161125 13:51:51 web:1946] 500 POST /api/login (127.0.0.1) 10.49ms
+[I 161125 13:52:45 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161125 13:52:51 autoreload:204] /home/python/0829/Tornado_Project/config.py modified; restarting server
+[I 161125 13:52:56 web:1946] 200 POST /api/login (127.0.0.1) 5.61ms
+[I 161125 13:52:56 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 8.46ms
+[I 161125 13:52:57 web:1946] 200 GET /api/check_login (127.0.0.1) 1.37ms
+[W 161125 13:52:57 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 4.11ms
+[I 161125 13:53:28 web:1946] 304 GET / (127.0.0.1) 1.82ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.16ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.21ms
+[I 161125 13:53:28 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.07ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 0.82ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.89ms
+[I 161125 13:53:28 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.74ms
+[I 161125 13:53:28 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 1.92ms
+[I 161125 13:53:28 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.14ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 0.76ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 0.87ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.52ms
+[I 161125 13:53:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 0.71ms
+[I 161125 13:53:28 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.29ms
+[I 161125 13:53:28 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 0.74ms
+[I 161125 13:53:28 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 1.42ms
+[I 161125 13:53:28 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 2.03ms
+[I 161125 13:53:28 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 1.78ms
+[I 161125 13:53:29 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 1.82ms
+[I 161125 13:53:29 web:1946] 304 GET /api/check_login (127.0.0.1) 1.33ms
+[W 161125 13:53:29 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.61ms
+[I 161125 13:54:00 web:1946] 304 GET / (127.0.0.1) 1.25ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.69ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.17ms
+[I 161125 13:54:00 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.40ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 1.69ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 0.91ms
+[I 161125 13:54:00 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.01ms
+[I 161125 13:54:00 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 0.68ms
+[I 161125 13:54:00 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.16ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.26ms
+[I 161125 13:54:00 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 1.88ms
+[I 161125 13:54:01 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.25ms
+[I 161125 13:54:01 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.50ms
+[I 161125 13:54:01 web:1946] 304 GET /static/js/template.js (127.0.0.1) 0.80ms
+[I 161125 13:54:01 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 0.96ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 0.72ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 1.71ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 2.80ms
+[I 161125 13:54:01 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 2.09ms
+[I 161125 13:54:01 web:1946] 304 GET /api/check_login (127.0.0.1) 1.88ms
+[W 161125 13:54:02 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 0.87ms
+[W 161125 13:54:05 web:1946] 404 GET /api/profile (127.0.0.1) 1.81ms
+[I 161125 13:54:08 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 2.28ms
+[I 161125 13:54:09 web:1946] 304 GET /api/check_login (127.0.0.1) 0.96ms
+[W 161125 13:54:09 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 0.85ms
+[I 161125 16:12:43 web:1946] 304 GET /my.html (127.0.0.1) 24.39ms
+[I 161125 16:12:43 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.16ms
+[I 161125 16:12:43 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.59ms
+[I 161125 16:12:43 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.18ms
+[I 161125 16:12:44 web:1946] 304 GET /static/css/ihome/my.css (127.0.0.1) 1.86ms
+[I 161125 16:12:44 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.28ms
+[I 161125 16:12:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.25ms
+[I 161125 16:12:44 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.01ms
+[I 161125 16:12:44 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.69ms
+[I 161125 16:12:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.45ms
+[I 161125 16:12:44 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.37ms
+[I 161125 16:12:44 web:1946] 200 GET /static/js/ihome/my.js (127.0.0.1) 4.26ms
+[I 161125 16:12:48 web:1946] 304 GET /profile.html (127.0.0.1) 3.61ms
+[I 161125 16:12:48 web:1946] 200 GET /static/js/ihome/profile.js (127.0.0.1) 2.43ms
+[W 161125 16:12:56 web:1946] 405 POST /api/profile/avatar (127.0.0.1) 26.48ms
+[I 161125 16:13:21 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161125 16:13:44 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161125 16:13:49 web:1946] 304 GET /profile.html (127.0.0.1) 20.02ms
+[I 161125 16:13:49 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.12ms
+[I 161125 16:13:49 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.29ms
+[I 161125 16:13:49 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.70ms
+[I 161125 16:13:49 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.54ms
+[I 161125 16:13:49 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.58ms
+[I 161125 16:13:49 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.93ms
+[I 161125 16:13:49 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.10ms
+[I 161125 16:13:49 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.41ms
+[I 161125 16:13:49 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 6.05ms
+[I 161125 16:13:50 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 5.46ms
+[I 161125 16:13:50 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.07ms
+[I 161125 16:13:50 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.21ms
+[I 161125 16:14:05 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 41.53ms
+[I 161125 16:14:55 web:1946] 304 GET /profile.html (127.0.0.1) 2.41ms
+[I 161125 16:14:56 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.03ms
+[I 161125 16:14:56 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.16ms
+[I 161125 16:14:56 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.49ms
+[I 161125 16:14:56 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.34ms
+[I 161125 16:14:56 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.25ms
+[I 161125 16:14:56 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.90ms
+[I 161125 16:14:56 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.21ms
+[I 161125 16:14:56 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.56ms
+[I 161125 16:14:57 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 5.52ms
+[I 161125 16:14:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 11.86ms
+[I 161125 16:14:57 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.43ms
+[I 161125 16:14:57 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.92ms
+[I 161125 16:14:58 web:1946] 304 GET /profile.html (127.0.0.1) 1.91ms
+[I 161125 16:14:59 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.05ms
+[I 161125 16:14:59 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 0.82ms
+[I 161125 16:14:59 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.76ms
+[I 161125 16:14:59 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.45ms
+[I 161125 16:15:00 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.91ms
+[I 161125 16:15:00 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.64ms
+[I 161125 16:15:00 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.58ms
+[I 161125 16:15:00 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 6.30ms
+[I 161125 16:15:00 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.64ms
+[I 161125 16:15:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.78ms
+[I 161125 16:15:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.06ms
+[I 161125 16:15:00 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.38ms
+[I 161125 16:15:09 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 43.78ms
+[I 161125 16:15:36 web:1946] 304 GET /profile.html (127.0.0.1) 1.78ms
+[I 161125 16:15:36 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.09ms
+[I 161125 16:15:36 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.00ms
+[I 161125 16:15:37 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.37ms
+[I 161125 16:15:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.82ms
+[I 161125 16:15:37 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.37ms
+[I 161125 16:15:37 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.59ms
+[I 161125 16:15:37 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.28ms
+[I 161125 16:15:37 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.34ms
+[I 161125 16:15:37 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.71ms
+[I 161125 16:15:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 3.10ms
+[I 161125 16:15:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.71ms
+[I 161125 16:15:38 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 2.36ms
+[I 161125 16:15:44 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 2.02ms
+[I 161125 16:15:47 web:1946] 200 GET /api/check_login (127.0.0.1) 1.93ms
+[W 161125 16:15:48 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 8.80ms
+[I 161125 16:15:51 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 2.05ms
+[I 161125 16:16:00 web:1946] 200 POST /api/login (127.0.0.1) 13.67ms
+[I 161125 16:16:03 web:1946] 200 GET /api/check_login (127.0.0.1) 4.45ms
+[W 161125 16:16:04 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 2.73ms
+[D 161125 16:16:56 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 16:16:56 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 16:16:56 connectionpool:395] "POST / HTTP/1.1" 200 76
+[E 161125 16:16:56 web:1524] Uncaught exception POST /api/profile/avatar (127.0.0.1)
+    HTTPServerRequest(protocol='http', host='127.0.0.1:8000', method='POST', uri='/api/profile/avatar', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://127.0.0.1:8000', 'Content-Length': '428375', 'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4', 'Accept-Encoding': 'gzip, deflate, br', 'X-Xsrftoken': '2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780', 'Host': '127.0.0.1:8000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://127.0.0.1:8000/profile.html', 'Cookie': '_xsrf=2|99407ad6|7bd54c9a2e4ac8758ed9b1d8e88d958c|1479871780; session_id="2|1:0|10:1480061760|10:session_id|44:ZmVkNTc1MGI1MThkNDZkMmE0MGE3MDg3ZTFhMmZkMGY=|aac3947a01288daf1259ee296dbecd3e3e06e6eda313392bc81a0e401f643bfb"', 'Content-Type': 'multipart/form-data; boundary=----WebKitFormBoundaryHTG9QscAXHA3BiNG'})
+    Traceback (most recent call last):
+      File "/home/python/.virtualenvs/tornado_py2/local/lib/python2.7/site-packages/tornado/web.py", line 1443, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/home/python/0829/Tornado_Project/utils/common.py", line 12, in wrapper
+        fun(request_handler_obj, *args, **kwargs)
+      File "/home/python/0829/Tornado_Project/handlers/Profile.py", line 32, in post
+        img_url = image_url_prefix + img_name
+    NameError: global name 'image_url_prefix' is not defined
+[E 161125 16:16:56 web:1946] 500 POST /api/profile/avatar (127.0.0.1) 633.76ms
+[I 161125 16:17:31 autoreload:204] /home/python/0829/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161125 16:17:34 web:1946] 304 GET /profile.html (127.0.0.1) 21.82ms
+[I 161125 16:17:34 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.49ms
+[I 161125 16:17:34 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.46ms
+[I 161125 16:17:34 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.18ms
+[I 161125 16:17:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.28ms
+[I 161125 16:17:35 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.44ms
+[I 161125 16:17:35 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.99ms
+[I 161125 16:17:35 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.62ms
+[I 161125 16:17:35 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 2.78ms
+[I 161125 16:17:35 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.44ms
+[I 161125 16:17:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.27ms
+[I 161125 16:17:35 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.56ms
+[I 161125 16:17:35 web:1946] 200 GET /static/js/ihome/profile.js (127.0.0.1) 1.73ms
+[I 161125 16:17:37 web:1946] 304 GET /profile.html (127.0.0.1) 1.55ms
+[I 161125 16:17:37 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.06ms
+[I 161125 16:17:37 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.16ms
+[I 161125 16:17:37 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.93ms
+[I 161125 16:17:37 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.85ms
+[I 161125 16:17:37 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.17ms
+[I 161125 16:17:38 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 1.21ms
+[I 161125 16:17:38 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.25ms
+[I 161125 16:17:38 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.31ms
+[I 161125 16:17:38 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 4.77ms
+[I 161125 16:17:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.27ms
+[I 161125 16:17:38 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.03ms
+[I 161125 16:17:38 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 3.76ms
+[D 161125 16:17:45 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161125 16:17:45 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161125 16:17:45 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161125 16:17:45 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 498.69ms
+[I 161126 08:56:06 autoreload:204] /home/python/0829/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161126 08:56:33 autoreload:204] /home/python/0829/Tornado_Project/handlers/Profile.py modified; restarting server
+[I 161126 08:57:20 autoreload:204] /home/python/0829/Tornado_Project/handlers/Passport.py modified; restarting server
+[I 161126 09:07:53 web:1946] 200 GET /static/js/ihome/my.js (127.0.0.1) 16.31ms
+[W 161126 09:07:57 web:1946] 404 GET /api/profile (127.0.0.1) 8.71ms
+[I 161126 09:07:59 web:1946] 304 GET / (127.0.0.1) 5.03ms
+[I 161126 09:07:59 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 2.19ms
+[I 161126 09:08:03 web:1946] 304 GET /api/check_login (127.0.0.1) 5.75ms
+[W 161126 09:08:05 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.34ms
+[I 161126 09:08:07 web:1946] 304 GET / (127.0.0.1) 1.88ms
+[I 161126 09:08:07 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.45ms
+[I 161126 09:08:07 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 4.60ms
+[I 161126 09:08:07 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.95ms
+[I 161126 09:08:07 web:1946] 304 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 2.28ms
+[I 161126 09:08:07 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 2.74ms
+[I 161126 09:08:07 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 3.69ms
+[I 161126 09:08:07 web:1946] 304 GET /static/css/ihome/index.css (127.0.0.1) 2.79ms
+[I 161126 09:08:08 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 7.76ms
+[I 161126 09:08:08 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 11.38ms
+[I 161126 09:08:08 web:1946] 304 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 7.46ms
+[I 161126 09:08:08 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.65ms
+[I 161126 09:08:08 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.04ms
+[I 161126 09:08:08 web:1946] 304 GET /static/js/template.js (127.0.0.1) 5.17ms
+[I 161126 09:08:08 web:1946] 304 GET /static/js/ihome/index.js (127.0.0.1) 2.50ms
+[I 161126 09:08:08 web:1946] 304 GET /static/images/logo@128x59.png (127.0.0.1) 2.08ms
+[I 161126 09:08:08 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 12.09ms
+[I 161126 09:08:08 web:1946] 304 GET /static/images/home02.jpg (127.0.0.1) 16.15ms
+[I 161126 09:08:08 web:1946] 304 GET /static/images/home03.jpg (127.0.0.1) 6.67ms
+[I 161126 09:08:10 web:1946] 304 GET /api/check_login (127.0.0.1) 2.89ms
+[W 161126 09:08:11 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.82ms
+[I 161126 09:08:15 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 2.35ms
+[W 161126 09:08:17 web:1946] 404 GET /api/profile (127.0.0.1) 8.36ms
+[I 161126 09:08:45 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161126 09:08:49 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161126 09:08:51 autoreload:204] /home/python/0829/Tornado_Project/urls.py modified; restarting server
+[I 161126 09:08:59 web:1946] 304 GET /my.html (127.0.0.1) 12.16ms
+[I 161126 09:08:59 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.83ms
+[I 161126 09:09:00 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.58ms
+[I 161126 09:09:00 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.49ms
+[I 161126 09:09:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.90ms
+[I 161126 09:09:00 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.13ms
+[I 161126 09:09:00 web:1946] 304 GET /static/css/ihome/my.css (127.0.0.1) 2.77ms
+[I 161126 09:09:00 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.03ms
+[I 161126 09:09:00 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.92ms
+[I 161126 09:09:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.07ms
+[I 161126 09:09:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.56ms
+[I 161126 09:09:00 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 1.33ms
+[I 161126 09:09:02 web:1946] 200 GET /api/profile (127.0.0.1) 41.19ms
+[I 161126 09:09:05 web:1946] 304 GET /profile.html (127.0.0.1) 2.68ms
+[I 161126 09:09:05 web:1946] 200 GET /static/js/ihome/profile.js (127.0.0.1) 2.60ms
+[I 161126 09:09:08 web:1946] 304 GET /api/profile (127.0.0.1) 3.49ms
+[D 161126 09:09:15 retry:164] Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None)
+[I 161126 09:09:15 connectionpool:213] Starting new HTTP connection (1): up.qiniu.com
+[D 161126 09:09:15 connectionpool:395] "POST / HTTP/1.1" 200 76
+[I 161126 09:09:15 web:1946] 200 POST /api/profile/avatar (127.0.0.1) 398.14ms
+[I 161126 09:09:21 web:1946] 200 POST /api/profile/name (127.0.0.1) 8.26ms
+[I 161126 09:09:28 web:1946] 304 GET /profile.html (127.0.0.1) 3.93ms
+[I 161126 09:09:28 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.05ms
+[I 161126 09:09:28 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.84ms
+[I 161126 09:09:28 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.48ms
+[I 161126 09:09:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.78ms
+[I 161126 09:09:28 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.42ms
+[I 161126 09:09:28 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 3.89ms
+[I 161126 09:09:28 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.01ms
+[I 161126 09:09:28 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 3.06ms
+[I 161126 09:09:28 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.51ms
+[I 161126 09:09:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.28ms
+[I 161126 09:09:28 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.51ms
+[I 161126 09:09:28 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 5.01ms
+[I 161126 09:09:31 web:1946] 200 GET /api/profile (127.0.0.1) 3.10ms
+[I 161126 09:09:33 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 2.32ms
+[I 161126 09:09:35 web:1946] 304 GET /api/profile (127.0.0.1) 4.27ms
+[I 161126 09:09:39 web:1946] 304 GET /api/profile (127.0.0.1) 2.43ms
+[I 161126 09:09:45 web:1946] 200 POST /api/profile/name (127.0.0.1) 12.21ms
+[I 161126 09:09:50 web:1946] 200 GET /api/profile (127.0.0.1) 3.13ms
+[I 161126 09:09:53 web:1946] 200 GET /static/js/ihome/auth.js (127.0.0.1) 2.56ms
+[I 161126 09:11:59 web:1946] 304 GET /auth.html (127.0.0.1) 4.95ms
+[I 161126 09:12:00 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.65ms
+[I 161126 09:12:00 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.55ms
+[I 161126 09:12:00 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 3.86ms
+[I 161126 09:12:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 5.04ms
+[I 161126 09:12:00 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.41ms
+[I 161126 09:12:00 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 5.66ms
+[I 161126 09:12:00 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 4.21ms
+[I 161126 09:12:00 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 1.91ms
+[I 161126 09:12:00 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 4.88ms
+[I 161126 09:12:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.88ms
+[I 161126 09:12:00 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 5.96ms
+[I 161126 09:12:00 web:1946] 200 GET /static/js/ihome/auth.js (127.0.0.1) 4.02ms
+[I 161126 09:12:03 web:1946] 200 GET /api/profile/auth (127.0.0.1) 5.06ms
+[I 161126 09:12:05 web:1946] 304 GET /static/js/ihome/login.js (127.0.0.1) 2.36ms
+[I 161126 09:12:24 web:1946] 200 POST /api/login (127.0.0.1) 8.22ms
+[W 161126 09:12:27 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 7.39ms
+[I 161126 09:12:28 web:1946] 200 GET /api/check_login (127.0.0.1) 3.33ms
+[I 161126 09:12:36 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 2.26ms
+[I 161126 09:12:38 web:1946] 200 GET /api/profile (127.0.0.1) 2.96ms
+[I 161126 09:12:42 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.12ms
+[I 161126 09:12:45 web:1946] 304 GET /api/profile (127.0.0.1) 5.47ms
+[E 161126 09:12:50 Profile:65] (1062, "Duplicate entry 'Delron' for key 'up_name'")
+[I 161126 09:12:51 web:1946] 200 POST /api/profile/name (127.0.0.1) 17.77ms
+[I 161126 09:12:56 web:1946] 200 POST /api/profile/name (127.0.0.1) 11.61ms
+[I 161126 09:13:00 web:1946] 200 GET /api/profile (127.0.0.1) 5.48ms
+[I 161126 09:13:03 web:1946] 304 GET /static/js/ihome/auth.js (127.0.0.1) 1.95ms
+[I 161126 09:13:05 web:1946] 200 GET /api/profile/auth (127.0.0.1) 3.09ms
+[I 161126 09:14:16 web:1946] 304 GET /auth.html (127.0.0.1) 7.10ms
+[I 161126 09:14:16 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.23ms
+[I 161126 09:14:16 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 7.60ms
+[I 161126 09:14:17 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 2.63ms
+[I 161126 09:14:17 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 3.44ms
+[I 161126 09:14:17 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.19ms
+[I 161126 09:14:17 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.65ms
+[I 161126 09:14:17 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.66ms
+[I 161126 09:14:17 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 3.68ms
+[I 161126 09:14:17 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.64ms
+[I 161126 09:14:17 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.73ms
+[I 161126 09:14:17 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.95ms
+[I 161126 09:14:17 web:1946] 304 GET /static/js/ihome/auth.js (127.0.0.1) 1.81ms
+[I 161126 09:14:18 web:1946] 304 GET /api/profile/auth (127.0.0.1) 4.01ms
+[I 161126 09:15:09 web:1946] 304 GET /auth.html (127.0.0.1) 1.42ms
+[I 161126 09:15:09 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 3.42ms
+[I 161126 09:15:09 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.76ms
+[I 161126 09:15:09 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.33ms
+[I 161126 09:15:09 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.50ms
+[I 161126 09:15:09 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.35ms
+[I 161126 09:15:09 web:1946] 304 GET /static/css/ihome/profile.css (127.0.0.1) 2.49ms
+[I 161126 09:15:09 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 2.37ms
+[I 161126 09:15:09 web:1946] 304 GET /static/js/jquery.form.min.js (127.0.0.1) 4.03ms
+[I 161126 09:15:09 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.13ms
+[I 161126 09:15:09 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.89ms
+[I 161126 09:15:10 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.58ms
+[I 161126 09:15:10 web:1946] 304 GET /static/js/ihome/auth.js (127.0.0.1) 2.79ms
+[I 161126 09:15:11 web:1946] 200 GET /api/profile/auth (127.0.0.1) 3.33ms
+[I 161126 09:15:20 web:1946] 200 POST /api/profile/auth (127.0.0.1) 2.15ms
+[I 161126 09:15:26 web:1946] 200 POST /api/profile/auth (127.0.0.1) 10.48ms
+[I 161126 09:15:30 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 2.24ms
+[I 161126 09:15:33 web:1946] 304 GET /api/profile (127.0.0.1) 5.99ms
+[I 161126 09:15:37 web:1946] 304 GET /static/js/ihome/auth.js (127.0.0.1) 3.01ms
+[I 161126 09:15:40 web:1946] 200 GET /api/profile/auth (127.0.0.1) 2.87ms
+[I 161126 09:15:44 web:1946] 304 GET /api/profile (127.0.0.1) 3.39ms
+[I 161126 09:15:48 web:1946] 200 GET /api/check_login (127.0.0.1) 2.42ms
+[W 161126 09:15:49 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.61ms
+[I 161126 09:47:06 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 2.69ms
+[I 161126 09:47:09 web:1946] 304 GET /api/profile (127.0.0.1) 4.02ms
+[I 161126 09:47:11 web:1946] 200 GET /myhouse.html (127.0.0.1) 3.45ms
+[I 161126 09:47:11 web:1946] 200 GET /static/css/ihome/myhouse.css (127.0.0.1) 6.75ms
+[I 161126 09:47:11 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 2.07ms
+[I 161126 09:47:16 web:1946] 304 GET /static/js/ihome/auth.js (127.0.0.1) 4.92ms
+[I 161126 09:47:19 web:1946] 304 GET /api/profile/auth (127.0.0.1) 5.68ms
+[I 161126 09:47:24 web:1946] 304 GET /api/profile (127.0.0.1) 13.02ms
+[I 161126 09:47:30 web:1946] 200 GET /newhouse.html (127.0.0.1) 3.74ms
+[I 161126 09:47:30 web:1946] 200 GET /static/css/ihome/newhouse.css (127.0.0.1) 7.23ms
+[I 161126 09:47:30 web:1946] 200 GET /static/js/ihome/newhouse.js (127.0.0.1) 4.26ms
+[I 161126 09:48:29 web:1946] 304 GET /api/profile (127.0.0.1) 3.70ms
+[I 161126 09:48:34 web:1946] 304 GET /api/check_login (127.0.0.1) 4.73ms
+[W 161126 09:48:35 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.33ms
+[I 161126 13:21:29 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 8.47ms
+[I 161126 13:21:30 web:1946] 304 GET /api/profile (127.0.0.1) 11.36ms
+[I 161126 14:31:22 web:1946] 304 GET /static/js/ihome/my.js (127.0.0.1) 3.88ms
+[I 161126 14:31:25 web:1946] 304 GET /api/profile (127.0.0.1) 9.23ms
+[I 161126 14:31:36 web:1946] 304 GET /profile.html (127.0.0.1) 6.86ms
+[I 161126 14:31:36 web:1946] 304 GET /static/js/ihome/profile.js (127.0.0.1) 1.84ms
+[I 161126 14:31:39 web:1946] 304 GET /api/profile (127.0.0.1) 2.37ms
+[I 161126 14:31:44 web:1946] 304 GET /api/profile (127.0.0.1) 1.80ms
+[I 161126 14:35:53 web:1946] 200 GET /newhouse.html?title=%E6%B5%8B%E8%AF%9510&price=200&area_id=5&address=123231&room_count=12&acreage=230&unit=%E4%B8%89%E5%AE%A4%E4%B8%A4%E5%8E%85%E4%B8%A4%E5%8D%AB&capacity=20&beds=%E5%8F%8C%E4%BA%BA%E5%BA%8A%3A2x1.8x1%E5%BC%A0+1.5x2x2%E5%BC%A0&deposit=2000&min_days=1&max_days=0&facility=3&facility=5&facility=7&facility=8&facility=10&facility=11&facility=13&facility=14&facility=15&facility=16&facility=18&facility=19&facility=20&facility=22 (127.0.0.1) 7.92ms
+[D 161126 15:18:24 House:19] None
+[I 161126 15:18:24 web:1946] 200 GET /api/house/area (127.0.0.1) 5.68ms
+[I 161126 15:20:04 web:1946] 200 GET /api/house/area (127.0.0.1) 4.30ms
+[I 161126 15:20:31 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[D 161126 15:20:36 House:19] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 161126 15:20:36 web:1946] 200 GET /api/house/area (127.0.0.1) 20.13ms
+[I 161126 15:23:49 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[I 161126 15:23:50 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[I 161126 15:24:13 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[I 161126 15:24:22 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[D 161126 15:24:50 House:19] [{"area_id": 1, "name": "\u4e1c\u57ce\u533a"}, {"area_id": 2, "name": "\u897f\u57ce\u533a"}, {"area_id": 3, "name": "\u671d\u9633\u533a"}, {"area_id": 4, "name": "\u6d77\u6dc0\u533a"}, {"area_id": 5, "name": "\u660c\u5e73\u533a"}, {"area_id": 6, "name": "\u4e30\u53f0\u533a"}, {"area_id": 7, "name": "\u623f\u5c71\u533a"}, {"area_id": 8, "name": "\u901a\u5dde\u533a"}, {"area_id": 9, "name": "\u987a\u4e49\u533a"}, {"area_id": 10, "name": "\u5927\u5174\u533a"}, {"area_id": 11, "name": "\u6000\u67d4\u533a"}, {"area_id": 12, "name": "\u5e73\u8c37\u533a"}, {"area_id": 13, "name": "\u5bc6\u4e91\u533a"}, {"area_id": 14, "name": "\u5ef6\u5e86\u533a"}, {"area_id": 15, "name": "\u77f3\u666f\u5c71\u533a"}, {"area_id": 16, "name": "\u95e8\u5934\u6c9f\u533a"}]
+[I 161126 15:24:50 House:20] hit redis cache
+[I 161126 15:24:50 web:1946] 200 GET /api/house/area (127.0.0.1) 4.26ms
+[I 161126 15:26:43 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[I 161126 15:27:52 web:1946] 200 GET /api/profile/auth (127.0.0.1) 15.31ms
+[I 161126 15:38:02 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[I 161126 15:38:52 web:1946] 200 GET /api/profile (127.0.0.1) 12.91ms
+[I 161126 15:42:02 web:1946] 304 GET /api/profile/auth (127.0.0.1) 1.82ms
+[I 161126 15:55:29 web:1946] 200 GET /myhouse.html (127.0.0.1) 14.89ms
+[I 161126 15:55:29 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 9.06ms
+[I 161126 15:55:29 web:1946] 200 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 13.74ms
+[I 161126 15:55:29 web:1946] 200 GET /static/css/reset.css (127.0.0.1) 7.58ms
+[I 161126 15:55:29 web:1946] 200 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 14.49ms
+[I 161126 15:55:29 web:1946] 200 GET /static/css/ihome/main.css (127.0.0.1) 7.02ms
+[I 161126 15:55:29 web:1946] 200 GET /static/css/ihome/myhouse.css (127.0.0.1) 3.35ms
+[I 161126 15:55:30 web:1946] 200 GET /static/js/jquery.min.js (127.0.0.1) 5.75ms
+[I 161126 15:55:30 web:1946] 200 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 11.46ms
+[I 161126 15:55:30 web:1946] 200 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 7.34ms
+[I 161126 15:55:30 web:1946] 200 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 4.98ms
+[I 161126 15:55:30 web:1946] 200 GET /static/js/template.js (127.0.0.1) 4.20ms
+[I 161126 15:55:30 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 3.58ms
+[I 161126 15:55:30 web:1946] 200 GET /static/images/home01.jpg (127.0.0.1) 21.38ms
+[I 161126 15:55:32 web:1946] 200 GET /static/plugins/bootstrap/css/bootstrap.min.css.map (127.0.0.1) 12.07ms
+[I 161126 15:55:33 web:1946] 200 GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 (127.0.0.1) 12.67ms
+[I 161126 15:56:55 autoreload:204] /home/python/0829/Tornado_Project/handlers/House.py modified; restarting server
+[I 161126 16:04:08 web:1946] 304 GET /myhouse.html (127.0.0.1) 35.41ms
+[I 161126 16:04:08 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.15ms
+[I 161126 16:04:08 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 3.43ms
+[I 161126 16:04:08 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 4.35ms
+[I 161126 16:04:08 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.54ms
+[I 161126 16:04:08 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.32ms
+[I 161126 16:04:08 web:1946] 304 GET /static/css/ihome/myhouse.css (127.0.0.1) 0.96ms
+[I 161126 16:04:08 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.50ms
+[I 161126 16:04:08 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.34ms
+[I 161126 16:04:08 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.99ms
+[I 161126 16:04:09 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.50ms
+[I 161126 16:04:09 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.97ms
+[I 161126 16:04:09 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 1.64ms
+[I 161126 16:04:09 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 12.92ms
+[I 161126 16:04:11 web:1946] 200 GET /api/house/my (127.0.0.1) 2.55ms
+[I 161126 16:05:33 web:1946] 304 GET /myhouse.html (127.0.0.1) 3.32ms
+[I 161126 16:05:33 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 4.48ms
+[I 161126 16:05:33 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 5.10ms
+[I 161126 16:05:33 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 13.18ms
+[I 161126 16:05:33 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 7.76ms
+[I 161126 16:05:33 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 1.28ms
+[I 161126 16:05:34 web:1946] 304 GET /static/css/ihome/myhouse.css (127.0.0.1) 2.88ms
+[I 161126 16:05:34 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 3.61ms
+[I 161126 16:05:34 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.17ms
+[I 161126 16:05:34 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 2.19ms
+[I 161126 16:05:34 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 3.54ms
+[I 161126 16:05:34 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.34ms
+[I 161126 16:05:34 web:1946] 304 GET /static/js/ihome/myhouse.js (127.0.0.1) 1.22ms
+[I 161126 16:05:34 web:1946] 304 GET /static/images/home01.jpg (127.0.0.1) 6.50ms
+[I 161126 16:05:37 web:1946] 304 GET /api/house/my (127.0.0.1) 3.39ms
+[I 161126 16:05:46 web:1946] 200 GET / (127.0.0.1) 3.51ms
+[I 161126 16:05:46 web:1946] 200 GET /static/plugins/swiper/css/swiper.min.css (127.0.0.1) 5.58ms
+[I 161126 16:05:46 web:1946] 200 GET /static/css/ihome/index.css (127.0.0.1) 5.85ms
+[I 161126 16:05:46 web:1946] 200 GET /static/images/logo@128x59.png (127.0.0.1) 6.86ms
+[I 161126 16:05:46 web:1946] 200 GET /static/images/home02.jpg (127.0.0.1) 15.53ms
+[I 161126 16:05:47 web:1946] 200 GET /static/images/home03.jpg (127.0.0.1) 7.70ms
+[I 161126 16:05:48 web:1946] 200 GET /static/plugins/swiper/js/swiper.jquery.min.js (127.0.0.1) 3.36ms
+[I 161126 16:05:48 web:1946] 200 GET /static/js/ihome/index.js (127.0.0.1) 3.86ms
+[I 161126 16:05:49 web:1946] 200 GET /api/check_login (127.0.0.1) 1.12ms
+[W 161126 16:05:50 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 5.77ms
+[I 161126 16:05:53 web:1946] 200 GET /login.html (127.0.0.1) 3.80ms
+[I 161126 16:05:53 web:1946] 200 GET /static/css/ihome/login.css (127.0.0.1) 2.20ms
+[I 161126 16:05:54 web:1946] 200 GET /static/js/ihome/login.js (127.0.0.1) 4.34ms
+[I 161126 16:06:03 web:1946] 200 POST /api/login (127.0.0.1) 15.58ms
+[I 161126 16:06:05 web:1946] 200 GET /api/check_login (127.0.0.1) 2.62ms
+[W 161126 16:06:06 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 1.19ms
+[I 161126 16:06:08 web:1946] 200 GET /my.html (127.0.0.1) 4.21ms
+[I 161126 16:06:09 web:1946] 200 GET /static/css/ihome/my.css (127.0.0.1) 14.40ms
+[I 161126 16:06:09 web:1946] 200 GET /static/js/ihome/my.js (127.0.0.1) 2.41ms
+[I 161126 16:06:11 web:1946] 200 GET /api/profile (127.0.0.1) 8.91ms
+[I 161126 16:06:14 web:1946] 304 GET /static/js/ihome/myhouse.js (127.0.0.1) 1.32ms
+[I 161126 16:06:16 web:1946] 200 GET /api/house/my (127.0.0.1) 9.03ms
+[I 161126 16:18:22 web:1946] 200 GET /myhouse.html (127.0.0.1) 2.67ms
+[I 161126 16:18:22 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 5.43ms
+[I 161126 16:18:22 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.22ms
+[I 161126 16:18:23 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.31ms
+[I 161126 16:18:23 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 5.23ms
+[I 161126 16:18:23 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 0.93ms
+[I 161126 16:18:23 web:1946] 304 GET /static/css/ihome/myhouse.css (127.0.0.1) 1.22ms
+[I 161126 16:18:23 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.01ms
+[I 161126 16:18:23 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 1.71ms
+[I 161126 16:18:23 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.34ms
+[I 161126 16:18:23 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.40ms
+[I 161126 16:18:23 web:1946] 304 GET /static/js/template.js (127.0.0.1) 1.47ms
+[I 161126 16:18:23 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 16.20ms
+[I 161126 16:18:25 web:1946] 304 GET /api/house/my (127.0.0.1) 4.52ms
+[I 161126 16:20:15 web:1946] 304 GET /myhouse.html (127.0.0.1) 3.01ms
+[I 161126 16:20:15 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 2.65ms
+[I 161126 16:20:15 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 2.04ms
+[I 161126 16:20:15 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.17ms
+[I 161126 16:20:15 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 1.35ms
+[I 161126 16:20:16 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 4.24ms
+[I 161126 16:20:16 web:1946] 304 GET /static/css/ihome/myhouse.css (127.0.0.1) 1.07ms
+[I 161126 16:20:16 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 1.55ms
+[I 161126 16:20:16 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 2.01ms
+[I 161126 16:20:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.27ms
+[I 161126 16:20:16 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 1.29ms
+[I 161126 16:20:16 web:1946] 304 GET /static/js/template.js (127.0.0.1) 3.24ms
+[I 161126 16:20:16 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 9.97ms
+[I 161126 16:20:19 web:1946] 304 GET /api/house/my (127.0.0.1) 3.69ms
+[I 161126 16:21:26 web:1946] 304 GET /myhouse.html (127.0.0.1) 1.16ms
+[I 161126 16:21:26 web:1946] 304 GET /static/plugins/bootstrap/css/bootstrap.min.css (127.0.0.1) 1.61ms
+[I 161126 16:21:26 web:1946] 304 GET /static/plugins/font-awesome/css/font-awesome.min.css (127.0.0.1) 1.33ms
+[I 161126 16:21:26 web:1946] 304 GET /static/css/reset.css (127.0.0.1) 1.27ms
+[I 161126 16:21:26 web:1946] 304 GET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css (127.0.0.1) 8.80ms
+[I 161126 16:21:26 web:1946] 304 GET /static/css/ihome/main.css (127.0.0.1) 2.27ms
+[I 161126 16:21:26 web:1946] 304 GET /static/css/ihome/myhouse.css (127.0.0.1) 1.40ms
+[I 161126 16:21:27 web:1946] 304 GET /static/js/jquery.min.js (127.0.0.1) 5.00ms
+[I 161126 16:21:27 web:1946] 304 GET /static/plugins/bootstrap/js/bootstrap.min.js (127.0.0.1) 3.09ms
+[I 161126 16:21:27 web:1946] 304 GET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js (127.0.0.1) 1.59ms
+[I 161126 16:21:27 web:1946] 304 GET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js (127.0.0.1) 2.00ms
+[I 161126 16:21:27 web:1946] 304 GET /static/js/template.js (127.0.0.1) 12.56ms
+[I 161126 16:21:27 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 3.36ms
+[I 161126 16:21:29 web:1946] 304 GET /api/house/my (127.0.0.1) 10.23ms
+[I 161126 16:24:55 web:1946] 304 GET /api/profile (127.0.0.1) 5.01ms
+[I 161126 16:25:01 web:1946] 304 GET /myhouse.html (127.0.0.1) 1.74ms
+[I 161126 16:25:01 web:1946] 200 GET /static/js/ihome/myhouse.js (127.0.0.1) 5.74ms
+[I 161126 16:25:04 web:1946] 304 GET /api/house/my (127.0.0.1) 3.84ms
+[I 161126 16:25:19 web:1946] 304 GET /api/profile (127.0.0.1) 2.14ms
+[I 161126 16:25:31 web:1946] 304 GET /api/check_login (127.0.0.1) 1.62ms
+[W 161126 16:25:33 web:1946] 404 GET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map (127.0.0.1) 3.74ms
